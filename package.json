@@ -1,0 +1,17 @@
+{
+  "name": "anaortunoestetica",
+  "version": "1.0.0",
+  "description": "Landing page para Ana Ortuño Estética",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass scss/main.scss css/styles.css",
+    "sass:watch": "sass --watch scss/main.scss css/styles.css",
+    "build": "sass scss/main.scss css/styles.css --style compressed"
+  },
+  "keywords": ["estetica", "landing-page", "sass"],
+  "author": "Victoria Ortuño",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
