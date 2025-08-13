@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/jpg" href="LOGO-EMPRESA2.png"/>
+  <link rel="icon" type="image/jpg" href="./assets/logo/LOGO-EMPRESA2.png"/>
   <style>
     html {
       scroll-behavior: smooth;
@@ -113,22 +113,25 @@
     }
 
     .home {
-      background-image: url('pexels-arina-krasnikova-6663677.jpg') no-repeat center center;
+      /* background-image: url('./assets/images/pexels-arina-krasnikova-6663677.jpg') no-repeat center center; */
+      background-image: url('./assets/images/pexels-arina-krasnikova-6663677.jpg');
       background-size: cover;
-      color: #fff;
-      text-align: center;
       padding: 6rem 2rem;
     }
 
-    .home h2 {
+    .home-text {
+      color: #fff;
+      text-align: left;
+    }
+
+    .home .home-text h2 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
-    .home p {
+    .home .home-text p {
       font-size: 1.2rem;
       max-width: 600px;
-      margin: 0 auto;
     }
 
     .cta-button {
@@ -408,7 +411,7 @@
     </header> -->
     <header style="padding: 1rem 2rem; position: relative;">
       <div style="display: flex; align-items: center;">
-        <img src="LOGO-EMPRESA2.png"
+        <img src="./assets/logo/LOGO-EMPRESA2.png"
           alt="Ana Ortuño Estética" height="150px">
         <h1 style="display: inline; font-family: 'Poppins', sans-serif; font-weight: 300;">Ana Ortuño Estética</h1>
       </div>
@@ -424,10 +427,12 @@
       <a href="javascript:void(0)" onclick="scrollToSection('contact')">Contacto</a>
     </nav>
     <section class="home" id="home">
-      <h2>Descubre tu mejor versión</h2>
-      <p>Tratamientos faciales, corporales, depilación láser y más. Vive la experiencia de cuidarte.</p>
-      <button class="cta-button"
-        onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Reserva tu cita</button>
+      <div class="home-text">
+        <h2>Descubre tu mejor versión</h2>
+        <p>Tratamientos faciales, corporales, depilación láser y más. Vive la experiencia de cuidarte.</p>
+        <button class="cta-button"
+          onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Reserva tu cita</button>
+      </div>
     </section>
     <section id="price-tables" class="price-tables-section">
       <h2>Nuestros Servicios y Tarifas</h2>
@@ -504,7 +509,7 @@
       <div class="contact-container">
         <div class="contact-info">
           <div class="contact-info-left">
-            <img src="LOGO-EMPRESA2.png"
+            <img src="./assets/logo/LOGO-EMPRESA2.png"
               alt="Ana Ortuño Estética Logo">
             <h2>Ana Ortuño Estética</h2>
           </div>
