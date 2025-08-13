@@ -155,9 +155,12 @@ section {
 
 // Home section
 .home {
-  background-image: url('../assets/images/pexels-arina-krasnikova-6663677.jpg');
+  // background-image: url('../assets/images/pexels-arina-krasnikova-6663677.jpg');
+  background-image: url('../assets/images/pexels-yankrukov-7010966.jpg');
   background-size: cover;
   padding: 6rem 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
   
   .home-text {
     color: $white;
